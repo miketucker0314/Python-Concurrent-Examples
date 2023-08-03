@@ -1,8 +1,8 @@
 import multiprocessing
 import asyncio
 
-# each time a class is created, a new thread is started with its own event loop
-#  Each thread creates a number of tasks on its own event loop
+# each time a class is created, a new process is started with its own event loop
+#  Each process creates a number of tasks on its own event loop
 
 class MultiprocessingAsync(multiprocessing.Process):
     def __init__(self, id, durations):
